@@ -13,7 +13,7 @@ Fathom Analytics is a privacy-focused website analytics platform designed to pro
 Add the module to your Magento project via Composer:
 
 ```bash
-composer require controlaltdelete/fathom-analytics
+composer require controlaltdelete/magento2-fathom-analytics
 ```
 
 Enable the module:
