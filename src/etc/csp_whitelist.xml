@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~     ______            __             __
+  ~    / ____/___  ____  / /__________  / /
+  ~   / /   / __ \/ __ \/ __/ ___/ __ \/ /
+  ~  / /___/ /_/ / / / / /_/ /  / /_/ / /
+  ~  \______________/_/\__/_/   \____/_/
+  ~     /   |  / / /_
+  ~    / /| | / / __/
+  ~   / ___ |/ / /_
+  ~  /_/ _|||_/\__/ __     __
+  ~     / __ \___  / /__  / /____
+  ~    / / / / _ \/ / _ \/ __/ _ \
+  ~   / /_/ /  __/ /  __/ /_/  __/
+  ~  /_____/\___/_/\___/\__/\___/
+  ~
+  ~ Copyright www.controlaltdelete.dev
+  -->
+
+<csp_whitelist xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Csp:etc/csp_whitelist.xsd">
+    <policies>
+        <policy id="script-src">
+            <values>
+                <value id="fathom-analytics" type="host">cdn.usefathom.com</value>
+            </values>
+        </policy>
+    </policies>
+</csp_whitelist>

@@ -1,0 +1,22 @@
+{
+    "name": "controlaltdelete/magento2-fathom-analytics",
+    "description": "Fathom Analytics integration for Magento 2",
+    "type": "magento2-module",
+    "autoload": {
+        "psr-4": {
+            "ControlAltDelete\\FathomAnalytics\\": "src/"
+        },
+        "files": [
+            "src/registration.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "Michiel Gerritsen",
+            "email": "info@controlaltdelete.nl"
+        }
+    ],
+    "require": {
+        "php": ">=8.1"
+    }
+}

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~     ______            __             __
+  ~    / ____/___  ____  / /__________  / /
+  ~   / /   / __ \/ __ \/ __/ ___/ __ \/ /
+  ~  / /___/ /_/ / / / / /_/ /  / /_/ / /
+  ~  \______________/_/\__/_/   \____/_/
+  ~     /   |  / / /_
+  ~    / /| | / / __/
+  ~   / ___ |/ / /_
+  ~  /_/ _|||_/\__/ __     __
+  ~     / __ \___  / /__  / /____
+  ~    / / / / _ \/ / _ \/ __/ _ \
+  ~   / /_/ /  __/ /  __/ /_/  __/
+  ~  /_____/\___/_/\___/\__/\___/
+  ~
+  ~ Copyright www.controlaltdelete.dev
+  -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Config:etc/system_file.xsd">
+    <system>
+        <section id="fathom_analytics" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label">
+            <label>Fathom Analytics</label>
+            <tab>service</tab>
+            <resource>ControlAltDelete_FathomAnalytics::configuration</resource>
+
+            <group id="general" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                <field id="enabled" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enabled</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <config_path>fathom_analytics/general/enabled</config_path>
+                </field>
+                <field id="enabled_in_developer_mode" translate="label" type="select" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enabled when in developer mode</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <config_path>fathom_analytics/general/enabled_in_developer_mode</config_path>
+                    <depends>
+                        <field id="enabled">1</field>
+                    </depends>
+                </field>
+                <field id="site_id" translate="label" type="text" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Site ID</label>
+                    <config_path>fathom_analytics/general/site_id</config_path>
+                    <depends>
+                        <field id="enabled">1</field>
+                    </depends>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
