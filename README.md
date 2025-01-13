@@ -30,7 +30,7 @@ bin/magento module:enable ControlAltDelete_FathomAnalytics
 4. Save the configuration.
 
 > [!NOTE]  
-> If you want to track different stores with separate Fathom Analytics Site IDs, you can need to switch to the store view and configure the Site ID for each store individually.
+> If you want to track different stores with separate Fathom Analytics Site IDs, you need to switch to the store view and configure the Site ID for each store individually.
 
 
 ## Usage
