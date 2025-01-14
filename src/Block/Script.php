@@ -35,7 +35,7 @@ class Script extends Template
         parent::__construct($context, $data);
     }
 
-    public function getSiteId(): string
+    public function getSiteId(): ?string
     {
         return $this->config->getSiteId();
     }

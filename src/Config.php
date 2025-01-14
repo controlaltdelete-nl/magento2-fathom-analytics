@@ -39,7 +39,7 @@ class Config
         return $this->config->isSetFlag('fathom_analytics/general/enabled_in_developer_mode');
     }
 
-    public function getSiteId(): string
+    public function getSiteId(): ?string
     {
         return $this->config->getValue('fathom_analytics/general/site_id');
     }
