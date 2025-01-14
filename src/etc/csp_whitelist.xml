@@ -24,5 +24,10 @@
                 <value id="fathom-analytics" type="host">cdn.usefathom.com</value>
             </values>
         </policy>
+        <policy id="img-src">
+            <values>
+                <value id="fathom-analytics" type="host">cdn.usefathom.com</value>
+            </values>
+        </policy>
     </policies>
 </csp_whitelist>
